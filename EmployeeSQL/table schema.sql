@@ -3,7 +3,9 @@
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 -- Keegan Nair Using QuickDBD to make ERD and table code.
-
+--Quick note also had to make some adjustments in python
+--to change format for date columns in employee table as it was not properly changing in excel
+--see readme for more details
 
 CREATE TABLE "departments" (
     "dept_no" VARCHAR   NOT NULL,
@@ -62,6 +64,7 @@ CREATE TABLE "titles" (
 );
 
 
+-- ADD CSV FILES FIRST BEFORE ADDING FK CODE
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
