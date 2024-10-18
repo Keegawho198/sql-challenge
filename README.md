@@ -6,13 +6,13 @@ Had issue with date format with employees csv file has to use python to change t
 
 using the following code
 
-###Step 1: Read the CSV file
+### Step 1: Read the CSV file
 
-###Step 2: Convert the date columns from MM/DD/YYYY to a DateTime object
+### Step 2: Convert the date columns from MM/DD/YYYY to a DateTime object
 
-###Step 3: Format the dates into YYYY-MM-DD
+### Step 3: Format the dates into YYYY-MM-DD
 
-###Step 4: Save the modified data back to a CSV file
+### Step 4: Save the modified data back to a CSV file
 
 ------------------------------------
 
