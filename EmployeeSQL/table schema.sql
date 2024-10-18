@@ -81,3 +81,39 @@ REFERENCES "titles" ("title_id");
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
+
+
+-- I forgot to add character limits, added below
+
+-- Alter the departments Table:
+
+ALTER TABLE "departments" 
+ALTER COLUMN "dept_no" TYPE VARCHAR(10),
+ALTER COLUMN "dept_name" TYPE VARCHAR(50);
+
+--Alter the dept_emp Table:
+
+ALTER TABLE "dept_emp" 
+ALTER COLUMN "dept_no" TYPE VARCHAR(10);
+
+--Alter the dept_manager Table:
+
+ALTER TABLE "dept_manager" 
+ALTER COLUMN "dept_no" TYPE VARCHAR(10);
+
+--Alter the employees Table:
+
+ALTER TABLE "employees" 
+ALTER COLUMN "emp_title_id" TYPE VARCHAR(10),
+ALTER COLUMN "first_name" TYPE VARCHAR(30),
+ALTER COLUMN "last_name" TYPE VARCHAR(30),
+ALTER COLUMN "sex" TYPE VARCHAR(1);
+
+--NO Alter the salaries Table: (No changes needed here since there are no VARCHAR columns.)
+
+--Alter the titles Table:
+
+ALTER TABLE "titles" 
+ALTER COLUMN "title_id" TYPE VARCHAR(10),
+ALTER COLUMN "title" TYPE VARCHAR(60);
+

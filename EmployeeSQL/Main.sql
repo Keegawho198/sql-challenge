@@ -1,5 +1,5 @@
 
--- testing
+-- testing tables
 
 select *
 from departments;
@@ -18,3 +18,8 @@ from salaries;
 
 select *
 from titles;
+
+
+
+
+
